@@ -22,6 +22,7 @@ Fracturia grows dimension by dimension, update after update — shaping a mythos
 ---
 
 # **📜 Update 1 — Rise of Arkonie**
+![](https://i.ibb.co/s9HP83yZ/update-fracturia-v1-0.png)
 *The Fracture begins.*
 
 **Rise of Arkonie** introduces the first of the nine dimensions: **Arkonia** — a realm built upon the remnants of a forgotten End, twisted and unstable.
