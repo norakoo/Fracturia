@@ -1,0 +1,16 @@
+{
+  "item.fracturia.magmitite_ingot": "Magmitite Ingot",
+  "item.fracturia.raw_magmitite": "Raw Magmitite",
+  "item.fracturia.xyophite_ingot": "Xyophite Ingot",
+  "item.fracturia.raw_xyophite": "Raw Xyophite",
+  "item.fracturia.avidite_ingot": "Avidite Ingot",
+  "item.fracturia.belite_ingot": "Belite Ingot",
+
+  "block.fracturia.deepslate_magmitite_ore": "Deepslate Magmitite Ore",
+  "block.fracturia.deepslate_xyophite_ore": "Deepslate Xyophite Ore",
+  "block.fracturia.deepslate_belite_ore": "Deepslate Belite Ore",
+  "block.fracturia.deepslate_avidite_ore": "Deepslate Avidite Ore",
+
+  "itemgroup.fracturia.fracturia_vanilla_items": "Fracturia: Vanilla Items",
+  "itemgroup.fracturia.fracturia_vanilla_blocks": "Fracturia: Vanilla Blocks"
+}

@@ -1,5 +1,8 @@
 package com.norako.fracturia;
 
+import com.norako.fracturia.block.FracturiaBlocks;
+import com.norako.fracturia.item.FracturiaItemGroups;
+import com.norako.fracturia.item.FracturiaItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +15,8 @@ public class Fracturia implements ModInitializer {
 	@Override
 	public void onInitialize()
     {
-
+        FracturiaItems.registerFracturiaItems();
+        FracturiaBlocks.registerModBlocks();
+        FracturiaItemGroups.registerItemGroups();
 	}
 }
