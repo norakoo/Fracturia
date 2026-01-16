@@ -4,6 +4,7 @@ import com.norako.fracturia.Fracturia;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,6 +15,8 @@ import net.minecraft.util.Identifier;
 
 public class FracturiaBlocks
 {
+    // OVERWORLD
+
     public static final Block DEEPSLATE_MAGMITITE_ORE = registerBlock("deepslate_magmitite_ore",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
@@ -29,6 +32,33 @@ public class FracturiaBlocks
     public static final Block DEEPSLATE_AVIDITE_ORE = registerBlock("deepslate_avidite_ore",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+
+    // NETHER
+
+    public static final Block NETHER_ONYX_ORE = registerBlock("nether_onyx_ore",
+            new Block(AbstractBlock.Settings.copy(Blocks.NETHER_GOLD_ORE)));
+
+    // END
+
+    // ARKONIA
+
+    // BIRUNIA
+
+    // ICEOLIA
+
+    // IRIDIA
+
+    // LUMINIA
+
+    // STELLARIA
+
+    // VELIA
+
+    // ZYPHIA
+
+    // XYLOHIA
+
+    // FRACTURIA
 
     private static Block registerBlock(String name, Block block)
     {

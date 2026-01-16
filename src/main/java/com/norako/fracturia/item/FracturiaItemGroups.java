@@ -34,6 +34,7 @@ public class FracturiaItemGroups
                         entries.add(FracturiaBlocks.DEEPSLATE_XYOPHITE_ORE);
                         entries.add(FracturiaBlocks.DEEPSLATE_BELITE_ORE);
                         entries.add(FracturiaBlocks.DEEPSLATE_AVIDITE_ORE);
+                        entries.add(FracturiaBlocks.NETHER_ONYX_ORE);
                     }).build());
 
     public static void registerItemGroups()

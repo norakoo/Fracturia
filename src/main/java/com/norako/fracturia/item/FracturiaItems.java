@@ -10,12 +10,38 @@ import net.minecraft.util.Identifier;
 
 public class FracturiaItems
 {
+    // OVERWORLD
+
     public static final Item RAW_MAGMITITE = registerItem("raw_magmitite", new Item(new Item.Settings()));
     public static final Item MAGMITITE_INGOT = registerItem("magmitite_ingot", new Item(new Item.Settings()));
     public static final Item RAW_XYOPHITE = registerItem("raw_xyophite", new Item(new Item.Settings()));
     public static final Item XYOPHITE_INGOT = registerItem("xyophite_ingot", new Item(new Item.Settings()));
     public static final Item BELITE_INGOT = registerItem("belite_ingot", new Item(new Item.Settings()));
     public static final Item AVIDITE_INGOT = registerItem("avidite_ingot", new Item(new Item.Settings()));
+
+    // NETHER
+
+    // END
+
+    // ARKONIA
+
+    // BIRUNIA
+
+    // ICEOLIA
+
+    // IRIDIA
+
+    // LUMINIA
+
+    // STELLARIA
+
+    // VELIA
+
+    // ZYPHIA
+
+    // XYLOHIA
+
+    // FRACTURIA
 
     private static Item registerItem(String name, Item item)
     {

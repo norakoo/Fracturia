@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "fracturia:block/deepslate_belite_ore"
-  }
-}
