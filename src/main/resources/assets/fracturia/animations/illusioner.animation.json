@@ -1,0 +1,371 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.illusioner.idle": {
+			"loop": true,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 5)", 0, "Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 2)"]
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * (1 * 150)) * (1 * -0.25)", 0]
+					}
+				},
+				"bipedHeadBaseRotator": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * (1 * 150) + 25) * (1 * -2.5)", 0, "Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 1)"]
+					}
+				},
+				"bipedLegLeft": {
+					"rotation": {
+						"vector": [-2.5, -7.5, 0]
+					}
+				},
+				"bipedLegRight": {
+					"rotation": {
+						"vector": [5.1089, 2.38613, 2.6089]
+					}
+				},
+				"bipedIllagerArms": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 5)", 0, "Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 2)"]
+					}
+				},
+				"bipedBody": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * (1 * 150)) * (1 * 6)", 0, "Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 1)"]
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * (1 * 150) - 25) * (1 * -0.25)", 0]
+					}
+				},
+				"bipedArms": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bipedHead": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * (1 * 150) + 25) * (1 * -2.5)", 0, "Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 1)"]
+					}
+				}
+			}
+		},
+		"illusioner_celebrate": {
+			"loop": true,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 5)", 0, "Math.cos(query.anim_time * (1 * 150) + 25) * (1 * 2)"]
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * (1 * 150)) * (1 * -0.25)", 0]
+					},
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"illusioner_walk": {
+			"loop": true,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"vector": [
+							0,
+							"Math.cos(query.anim_time * (query.ground_speed * 300)) * (1 * -5)",
+							"Math.cos(query.anim_time * (query.ground_speed * 300)) * (1 * -7.55)"
+						]
+					},
+					"position": {
+						"vector": [0, "Math.clamp(Math.cos(query.anim_time * (query.ground_speed * 600) + 50) * (1 * 0.25), -0.25, 360)", 0]
+					}
+				}
+			}
+		},
+		"illusioner_vanish": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.3333": {
+							"vector": [0, 0, 0]
+						},
+						"0.625": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, 0, 0]
+						},
+						"0.875": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.3333": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"illusioner_appear": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"0.7083": {
+							"vector": [0, 0, 0]
+						},
+						"0.875": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.7083": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"0.7083": {
+							"vector": [1, 1, 1]
+						},
+						"0.75": {
+							"vector": [1, 1, 1]
+						}
+					}
+				}
+			}
+		},
+		"illusioner_blind": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.5,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.375": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * (1 * 150)) * (1 * -0.25)", 0]
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"0.0417": {
+							"vector": [1, 1, 1]
+						},
+						"1.2917": {
+							"vector": [1, 1, 1]
+						},
+						"1.375": {
+							"vector": [1, 1, 1]
+						}
+					}
+				}
+			}
+		},
+		"illusioner_shoot": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.75,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.4583": {
+							"vector": [0, 0, 0]
+						},
+						"1.625": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * (1 * 150)) * (1 * -0.25)", 0]
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"0.0417": {
+							"vector": [1, 1, 1]
+						},
+						"1.5": {
+							"vector": [1, 1, 1]
+						},
+						"1.5417": {
+							"vector": [1, 1, 1]
+						}
+					}
+				}
+			}
+		},
+		"illusioner_clone_shoot": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.875,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.7917": {
+							"vector": [0, 0, 0]
+						},
+						"1.875": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * (1 * 150)) * (1 * -0.25)", 0]
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"0.0417": {
+							"vector": [1, 1, 1]
+						},
+						"1.75": {
+							"vector": [1, 1, 1]
+						},
+						"1.7917": {
+							"vector": [1, 1, 1]
+						}
+					}
+				}
+			}
+		},
+		"illusioner_idle_uncrossed": {
+			"loop": true,
+			"bones": {
+				"illagerArms": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"illusioner_walk_uncrossed": {
+			"loop": true,
+			"bones": {
+				"illagerArms": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"illusioner_vanish_uncrossed": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"illagerArms": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"illusioner_appear_uncrossed": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"illagerArms": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"illusioner_blind_uncrossed": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.5,
+			"bones": {
+				"illagerArms": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"illusioner_shoot_uncrossed": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.75,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.4583": {
+							"vector": [0, 0, 0]
+						},
+						"1.625": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * (1 * 150)) * (1 * -0.25)", 0]
+					},
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"illusioner_clone_shoot_uncrossed": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.875,
+			"bones": {
+				"illagerArms": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.7917": {
+							"vector": [0, 0, 0]
+						},
+						"1.875": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * (1 * 150)) * (1 * -0.25)", 0]
+					},
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

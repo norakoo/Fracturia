@@ -1,0 +1,143 @@
+{
+  "mountaineer_ambient": {
+    "subtitle": "sounds.fracturia.mountaineer_ambient",
+    "sounds": [
+      "fracturia:mountaineer_idle01",
+      "fracturia:mountaineer_idle02",
+      "fracturia:mountaineer_idle03",
+      "fracturia:mountaineer_idle04"
+    ]
+  },
+  "mountaineer_hurt": {
+    "subtitle": "sounds.fracturia.mountaineer_hurt",
+    "sounds": [
+      "fracturia:mountaineer_hurt01",
+      "fracturia:mountaineer_hurt02",
+      "fracturia:mountaineer_hurt03",
+      "fracturia:mountaineer_hurt04",
+      "fracturia:mountaineer_hurt05"
+    ]
+  },
+  "mountaineer_death": {
+    "subtitle": "sounds.fracturia.mountaineer_death",
+    "sounds": [
+      "fracturia:mountaineer_death01",
+      "fracturia:mountaineer_death02",
+      "fracturia:mountaineer_death03",
+      "fracturia:mountaineer_death04"
+    ]
+  },
+  "windcaller_ambient": {
+    "subtitle": "sounds.fracturia.windcaller_ambient",
+    "sounds": [
+      "fracturia:windcaller_idle01",
+      "fracturia:windcaller_idle02",
+      "fracturia:windcaller_idle03",
+      "fracturia:windcaller_idle04"
+    ]
+  },
+  "windcaller_hurt": {
+    "subtitle": "sounds.fracturia.windcaller_hurt",
+    "sounds": [
+      "fracturia:windcaller_hurt01",
+      "fracturia:windcaller_hurt02",
+      "fracturia:windcaller_hurt03",
+      "fracturia:windcaller_hurt04"
+    ]
+  },
+  "windcaller_death": {
+    "subtitle": "sounds.fracturia.windcaller_death",
+    "sounds": [
+      "fracturia:windcaller_death01",
+      "fracturia:windcaller_death02",
+      "fracturia:windcaller_death03",
+      "fracturia:windcaller_death04"
+    ]
+  },
+  "windcaller_polnareff": {
+    "subtitle": "sounds.fracturia.windcaller_polnareff",
+    "sounds": [
+      "fracturia:windcaller_polnareff"
+    ]
+  },
+  "squall_golem_ambient": {
+    "subtitle": "sounds.fracturia.squall_golem_ambient",
+    "sounds": [
+      "fracturia:squall_golem_idle01",
+      "fracturia:squall_golem_idle02"
+    ]
+  },
+  "squall_golem_hurt": {
+    "subtitle": "sounds.fracturia.squall_golem_hurt",
+    "sounds": [
+      "fracturia:squall_golem_hurt01",
+      "fracturia:squall_golem_hurt02",
+      "fracturia:squall_golem_hurt03",
+      "fracturia:squall_golem_hurt04"
+    ]
+  },
+  "squall_golem_death": {
+    "subtitle": "sounds.fracturia.squall_golem_death",
+    "sounds": [
+      "fracturia:squall_golem_death01",
+      "fracturia:squall_golem_death02",
+      "fracturia:squall_golem_death03"
+    ]
+  },
+  "squall_golem_power_on": {
+    "subtitle": "sounds.fracturia.squall_golem_power_on",
+    "sounds": [
+      "fracturia:squall_golem_power_on01",
+      "fracturia:squall_golem_power_on02"
+    ]
+  },
+  "squall_golem_attack": {
+    "subtitle": "sounds.fracturia.squall_golem_attack",
+    "sounds": [
+      "fracturia:squall_golem_attack01",
+      "fracturia:squall_golem_attack02",
+      "fracturia:squall_golem_attack03",
+      "fracturia:squall_golem_attack04"
+    ]
+  },
+  "squall_golem_left_step": {
+    "subtitle": "sounds.fracturia.squall_golem_left_step",
+    "sounds": [
+      "fracturia:squall_golem_left_step01",
+      "fracturia:squall_golem_left_step02",
+      "fracturia:squall_golem_left_step03"
+    ]
+  },
+  "squall_golem_right_step": {
+    "subtitle": "sounds.fracturia.squall_golem_right_step",
+    "sounds": [
+      "fracturia:squall_golem_right_step01",
+      "fracturia:squall_golem_right_step02",
+      "fracturia:squall_golem_right_step03"
+    ]
+  },
+  "illusioner_ambient": {
+    "subtitle": "sounds.fracturia.illusioner_ambient",
+    "sounds": [
+
+    ]
+  },
+  "illusioner_hurt": {
+    "subtitle": "sounds.fracturia.illusioner_hurt",
+    "sounds": [
+
+    ]
+  },
+  "illusioner_death": {
+    "subtitle": "sounds.fracturia.illusioner_death",
+    "sounds": [
+
+    ]
+  },
+  "illusioner_cast_spell": {
+    "subtitle": "sounds.fracturia.illusioner_cast_spell",
+    "sounds": [
+
+    ]
+  }
+}

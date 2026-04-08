@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "belite",
+  "ingredient": {
+    "item": "fracturia:deepslate_belite_ore"
+  },
+  "result": {
+    "id": "fracturia:belite_ingot"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:evoker",
+    "minecraft:pillager",
+    "minecraft:ravager",
+    "minecraft:vindicator",
+    "minecraft:illusioner",
+    "minecraft:witch",
+    "fracturia:mountaineer",
+    "fracturia:windcaller",
+    "fracturia:illusioner",
+    "fracturia:squall_golem"
+  ]
+}

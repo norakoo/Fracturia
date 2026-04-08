@@ -5,6 +5,10 @@
   "item.fracturia.raw_xyophite": "Raw Xyophite",
   "item.fracturia.avidite_ingot": "Avidite Ingot",
   "item.fracturia.belite_ingot": "Belite Ingot",
+  "item.fracturia.mountaineer_spawn_egg": "Mountaineer Spawn Egg",
+  "item.fracturia.windcaller_spawn_egg": "Windcaller Spawn Egg",
+  "item.fracturia.squall_golem_spawn_egg": "Squall Golem Spawn Egg",
+  "item.fracturia.illusioner_spawn_egg": "Illusioner Spawn Egg",
 
   "block.fracturia.deepslate_magmitite_ore": "Deepslate Magmitite Ore",
   "block.fracturia.deepslate_xyophite_ore": "Deepslate Xyophite Ore",
@@ -12,6 +16,26 @@
   "block.fracturia.deepslate_avidite_ore": "Deepslate Avidite Ore",
   "block.fracturia.nether_onyx_ore": "Nether Onyx Ore",
 
+  "entity.fracturia.mountaineer": "Mountaineer",
+  "entity.fracturia.windcaller": "Windcaller",
+  "entity.fracturia.squall_golem": "Squall Golem",
+
+  "sounds.fracturia.mountaineer_ambient": "Mountaineer Hmmphf",
+  "sounds.fracturia.mountaineer_hurt": "Mountaineer Hurt",
+  "sounds.fracturia.mountaineer_death": "Mountaineer Death",
+  "sounds.fracturia.windcaller_ambient": "Windcaller Hmmphf",
+  "sounds.fracturia.windcaller_hurt": "Windcaller Hurt",
+  "sounds.fracturia.windcaller_death": "Windcaller Death",
+  "sounds.fracturia.squall_golem_ambient": "Squall Golem Windy",
+  "sounds.fracturia.squall_golem_hurt": "Squall Golem Hurt",
+  "sounds.fracturia.squall_golem_death": "Squall Golem Death",
+  "sounds.fracturia.squall_golem_power_on": "Squall Golem Turn On",
+  "sounds.fracturia.squall_golem_attack": "Squall Golem Attack",
+  "sounds.fracturia.squall_golem_left_step": "Squall Golem Step",
+  "sounds.fracturia.squall_golem_right_step": "Squall Golem Step",
+  "sounds.fracturia.squall_golem_right_step": "Squall Golem Step",
+
   "itemgroup.fracturia.fracturia_vanilla_items": "Fracturia: Vanilla Items",
-  "itemgroup.fracturia.fracturia_vanilla_blocks": "Fracturia: Vanilla Blocks"
+  "itemgroup.fracturia.fracturia_vanilla_blocks": "Fracturia: Vanilla Blocks",
+  "itemgroup.fracturia.fracturia_vanilla_mobs": "Fracturia: Vanilla Mobs"
 }

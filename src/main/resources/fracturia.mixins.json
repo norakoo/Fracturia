@@ -3,6 +3,8 @@
 	"package": "com.norako.fracturia.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+      "RaidMixin",
+      "RaidAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1

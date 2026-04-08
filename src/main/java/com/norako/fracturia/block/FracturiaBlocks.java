@@ -72,7 +72,7 @@ public class FracturiaBlocks
                 new BlockItem(block, new Item.Settings()));
     }
 
-    public static void registerModBlocks()
+    public static void registerFracturiaBlocks()
     {
         Fracturia.LOGGER.info("Registering Fracturia Blocks for " + Fracturia.MOD_ID);
 

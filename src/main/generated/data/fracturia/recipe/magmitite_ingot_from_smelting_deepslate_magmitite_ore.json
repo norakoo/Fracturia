@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "magmitite",
+  "ingredient": {
+    "item": "fracturia:deepslate_magmitite_ore"
+  },
+  "result": {
+    "id": "fracturia:magmitite_ingot"
+  }
+}

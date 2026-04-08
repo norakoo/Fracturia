@@ -37,6 +37,17 @@ public class FracturiaItemGroups
                         entries.add(FracturiaBlocks.NETHER_ONYX_ORE);
                     }).build());
 
+    public static final ItemGroup FRACTURIA_VANILLA_MOBS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Fracturia.MOD_ID, "fracturia_vanilla_mobs"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(FracturiaItems.MOUNTAINEER_SPAWN_EGG))
+                    .displayName(Text.translatable("itemgroup.fracturia.fracturia_vanilla_mobs"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(FracturiaItems.MOUNTAINEER_SPAWN_EGG);
+                        entries.add(FracturiaItems.WINDCALLER_SPAWN_EGG);
+                        entries.add(FracturiaItems.SQUALL_GOLEM_SPAWN_EGG);
+                        entries.add(FracturiaItems.ILLUSIONER_SPAWN_EGG);
+                    }).build());
+
     public static void registerItemGroups()
     {
         Fracturia.LOGGER.info("Registering Item Groups for " + Fracturia.MOD_ID);

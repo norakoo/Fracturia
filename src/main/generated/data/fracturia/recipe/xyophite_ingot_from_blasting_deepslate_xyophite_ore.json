@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "xyophite",
+  "ingredient": {
+    "item": "fracturia:deepslate_xyophite_ore"
+  },
+  "result": {
+    "id": "fracturia:xyophite_ingot"
+  }
+}

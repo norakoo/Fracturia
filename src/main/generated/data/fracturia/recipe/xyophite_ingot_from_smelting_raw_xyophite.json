@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "xyophite",
+  "ingredient": {
+    "item": "fracturia:raw_xyophite"
+  },
+  "result": {
+    "id": "fracturia:xyophite_ingot"
+  }
+}

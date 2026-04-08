@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.ModelIds;
 import net.minecraft.data.client.Models;
 
 public class FracturiaModelProvider extends FabricModelProvider
@@ -22,6 +23,10 @@ public class FracturiaModelProvider extends FabricModelProvider
         blockStateModelGenerator.registerSimpleCubeAll(FracturiaBlocks.DEEPSLATE_XYOPHITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(FracturiaBlocks.DEEPSLATE_BELITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(FracturiaBlocks.DEEPSLATE_AVIDITE_ORE);
+        blockStateModelGenerator.registerParentedItemModel(FracturiaItems.MOUNTAINEER_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+        blockStateModelGenerator.registerParentedItemModel(FracturiaItems.WINDCALLER_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+        blockStateModelGenerator.registerParentedItemModel(FracturiaItems.SQUALL_GOLEM_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+        blockStateModelGenerator.registerParentedItemModel(FracturiaItems.ILLUSIONER_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
     }
 
     @Override
