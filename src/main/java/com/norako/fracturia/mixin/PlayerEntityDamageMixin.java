@@ -1,7 +1,7 @@
 package com.norako.fracturia.mixin;
 
-import com.norako.fracturia.difficulty.Difficulty;
-import com.norako.fracturia.difficulty.DifficultyState;
+import com.norako.fracturia.difficulty.FracturiaDifficulty;
+import com.norako.fracturia.difficulty.FracturiaDifficultyState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.MobEntity;
@@ -18,6 +18,7 @@ public class PlayerEntityDamageMixin {
     @Unique
     private boolean fracturia_scalingDamage = false;
 
+    // Scales all mob-sourced damage (melee + projectiles) before armor calculation
     @Inject(method = "damage", at = @At("HEAD"), cancellable = true)
     private void fracturia_scaleMobDamage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
         PlayerEntity player = (PlayerEntity)(Object)this;
@@ -27,12 +28,13 @@ public class PlayerEntityDamageMixin {
         Entity attacker = source.getAttacker();
         if (!(attacker instanceof MobEntity) || attacker instanceof PlayerEntity) return;
 
-        Difficulty diff = DifficultyState.activeServerDifficulty;
+        FracturiaDifficulty diff = FracturiaDifficultyState.activeServerDifficulty;
         if (!diff.isActive()) return;
 
         fracturia_scalingDamage = true;
         boolean result = player.damage(source, amount * diff.getDamageMultiplier());
         fracturia_scalingDamage = false;
+
         cir.setReturnValue(result);
         cir.cancel();
     }

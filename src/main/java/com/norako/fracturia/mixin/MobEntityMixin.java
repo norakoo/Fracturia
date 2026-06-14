@@ -1,7 +1,7 @@
 package com.norako.fracturia.mixin;
 
-import com.norako.fracturia.difficulty.Difficulty;
-import com.norako.fracturia.difficulty.DifficultyState;
+import com.norako.fracturia.difficulty.FracturiaDifficulty;
+import com.norako.fracturia.difficulty.FracturiaDifficultyState;
 import net.minecraft.entity.EntityData;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
@@ -19,11 +19,11 @@ public class MobEntityMixin {
 
     @Inject(method = "initialize", at = @At("RETURN"))
     private void fracturia_scaleMaxHealth(
-            ServerWorldAccess world, LocalDifficulty localDifficulty,
-            SpawnReason spawnReason, EntityData entityData,
-            CallbackInfoReturnable<EntityData> cir
+        ServerWorldAccess world, LocalDifficulty localDifficulty,
+        SpawnReason spawnReason, EntityData entityData,
+        CallbackInfoReturnable<EntityData> cir
     ) {
-        Difficulty diff = DifficultyState.activeServerDifficulty;
+        FracturiaDifficulty diff = FracturiaDifficultyState.activeServerDifficulty;
         if (!diff.isActive()) return;
 
         MobEntity mob = (MobEntity)(Object)this;

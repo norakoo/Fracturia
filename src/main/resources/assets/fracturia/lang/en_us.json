@@ -38,7 +38,6 @@
   "sounds.fracturia.squall_golem_attack": "Squall Golem Attack",
   "sounds.fracturia.squall_golem_left_step": "Squall Golem Step",
   "sounds.fracturia.squall_golem_right_step": "Squall Golem Step",
-  "sounds.fracturia.squall_golem_right_step": "Squall Golem Step",
   "sounds.fracturia.illusioner_ambient": "Illusioner Hmmphf",
   "sounds.fracturia.illusioner_hurt": "Illusioner Hurt",
   "sounds.fracturia.illusioner_death": "Illusioner Death",
@@ -48,7 +47,7 @@
   "itemgroup.fracturia.fracturia_vanilla_mobs": "Fracturia: Vanilla Mobs",
 
   "fracturia.difficulty.button": "Fracturia: %s",
-  "fracturia_difficulty.none": "§aNormal",
-  "fracturia_difficulty.insane": "§cInsane",
-  "fracturia_difficulty.inconceivable": "§4Inconceivable"
+  "fracturia.difficulty.none": "Normal",
+  "fracturia.difficulty.demented": "Dément",
+  "fracturia.difficulty.inconceivable": "Inconcevable"
 }
