@@ -3,6 +3,12 @@
 	"package": "com.norako.fracturia.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"MobEntityMixin",
+		"PlayerEntityDamageMixin",
+		"OreFeatureMixin"
+	],
+	"client": [
+		"CreateWorldScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -13,5 +13,10 @@
   "block.fracturia.nether_onyx_ore": "Nether Onyx Ore",
 
   "itemgroup.fracturia.fracturia_vanilla_items": "Fracturia: Vanilla Items",
-  "itemgroup.fracturia.fracturia_vanilla_blocks": "Fracturia: Vanilla Blocks"
+  "itemgroup.fracturia.fracturia_vanilla_blocks": "Fracturia: Vanilla Blocks",
+
+  "fracturia.difficulty.button": "Fracturia: %s",
+  "fracturia.difficulty.none": "Normal",
+  "fracturia.difficulty.demented": "Dément",
+  "fracturia.difficulty.inconceivable": "Inconcevable"
 }
