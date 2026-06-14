@@ -111,6 +111,8 @@ public class SquallGolemEntity extends RaiderEntity implements GeoEntity
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 15.0f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 0.1f)
+                .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 2.0)
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 2.0)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 12.0);
     }
 
@@ -408,6 +410,9 @@ public class SquallGolemEntity extends RaiderEntity implements GeoEntity
     {
         return null;
     }
+
+    @Override
+    protected float getSoundVolume() { return 0.8F; } // portée ~13 blocs
 
     @Override
     protected SoundEvent getAmbientSound()

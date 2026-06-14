@@ -54,6 +54,38 @@
       "fracturia:windcaller_death04"
     ]
   },
+  "windcaller_blast": {
+    "subtitle": "sounds.fracturia.windcaller_blast",
+    "sounds": [
+      "fracturia:windcaller_blast01",
+      "fracturia:windcaller_blast02",
+      "fracturia:windcaller_blast03"
+    ]
+  },
+  "windcaller_blast_attack": {
+    "subtitle": "sounds.fracturia.windcaller_blast_attack",
+    "sounds": [
+      "fracturia:windcaller_blast_attack01",
+      "fracturia:windcaller_blast_attack02",
+      "fracturia:windcaller_blast_attack03"
+    ]
+  },
+  "windcaller_lift": {
+    "subtitle": "sounds.fracturia.windcaller_lift",
+    "sounds": [
+      "fracturia:windcaller_lift01",
+      "fracturia:windcaller_lift02",
+      "fracturia:windcaller_lift03"
+    ]
+  },
+  "windcaller_tornado": {
+    "subtitle": "sounds.fracturia.windcaller_tornado",
+    "sounds": [
+      "fracturia:windcaller_tornado01",
+      "fracturia:windcaller_tornado02",
+      "fracturia:windcaller_tornado03"
+    ]
+  },
   "windcaller_polnareff": {
     "subtitle": "sounds.fracturia.windcaller_polnareff",
     "sounds": [
@@ -119,25 +151,95 @@
   "illusioner_ambient": {
     "subtitle": "sounds.fracturia.illusioner_ambient",
     "sounds": [
-
+      "fracturia:illusioner_idle01",
+      "fracturia:illusioner_idle02",
+      "fracturia:illusioner_idle03",
+      "fracturia:illusioner_idle04"
     ]
   },
   "illusioner_hurt": {
     "subtitle": "sounds.fracturia.illusioner_hurt",
     "sounds": [
-
+      "fracturia:illusioner_hurt01",
+      "fracturia:illusioner_hurt02",
+      "fracturia:illusioner_hurt03"
     ]
   },
   "illusioner_death": {
     "subtitle": "sounds.fracturia.illusioner_death",
     "sounds": [
-
+      "fracturia:illusioner_death01",
+      "fracturia:illusioner_death02"
     ]
   },
-  "illusioner_cast_spell": {
-    "subtitle": "sounds.fracturia.illusioner_cast_spell",
+  "illusioner_clone_death": {
+    "subtitle": "sounds.fracturia.illusioner_clone_death",
     "sounds": [
-
+      "fracturia:illusioner_death_clone01",
+      "fracturia:illusioner_death_clone02"
+    ]
+  },
+  "illusioner_all_death": {
+    "subtitle": "sounds.fracturia.illusioner_all_death",
+    "sounds": [
+      "fracturia:illusioner_death_all01",
+      "fracturia:illusioner_death_all02"
+    ]
+  },
+  "illusioner_prepare_mirror": {
+    "subtitle": "sounds.fracturia.illusioner_prepare_mirror",
+    "sounds": [
+      "fracturia:illusioner_mirror_image"
+    ]
+  },
+  "illusioner_mirror": {
+    "subtitle": "sounds.fracturia.illusioner_mirror",
+    "sounds": [
+      "fracturia:illusioner_mirror01",
+      "fracturia:illusioner_mirror02"
+    ]
+  },
+  "illusioner_blindness": {
+    "subtitle": "sounds.fracturia.illusioner_blindness",
+    "sounds": [
+      "fracturia:illusioner_blindness"
+    ]
+  },
+  "whisperer_ambient": {
+    "subtitle": "sounds.fracturia.whisperer_ambient",
+    "sounds": [
+      "fracturia:whisperer_idle01",
+      "fracturia:whisperer_idle02",
+      "fracturia:whisperer_idle03"
+    ]
+  },
+  "whisperer_hurt": {
+    "subtitle": "sounds.fracturia.whisperer_hurt",
+    "sounds": [
+      "fracturia:whisperer_hurt01",
+      "fracturia:whisperer_hurt02",
+      "fracturia:whisperer_hurt03"
+    ]
+  },
+  "whisperer_death": {
+    "subtitle": "sounds.fracturia.whisperer_death",
+    "sounds": [
+      "fracturia:whisperer_death01",
+      "fracturia:whisperer_death02"
+    ]
+  },
+  "whisperer_attack": {
+    "subtitle": "sounds.fracturia.whisperer_attack",
+    "sounds": [
+      "fracturia:whisperer_attack01",
+      "fracturia:whisperer_attack02",
+      "fracturia:whisperer_attack03"
+    ]
+  },
+  "whisperer_summon": {
+    "subtitle": "sounds.fracturia.whisperer_summon",
+    "sounds": [
+      "fracturia:whisperer_summon"
     ]
   }
 }

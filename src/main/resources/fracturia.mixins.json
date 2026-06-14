@@ -4,8 +4,14 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
       "RaidMixin",
-      "RaidAccessor"
+      "RaidAccessor",
+      "MobEntityMixin",
+      "PlayerEntityDamageMixin",
+      "OreFeatureMixin"
 	],
+    "client": [
+      "GameMenuScreenMixin"
+    ],
 	"injectors": {
 		"defaultRequire": 1
 	},

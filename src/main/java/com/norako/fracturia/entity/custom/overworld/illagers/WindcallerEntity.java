@@ -7,16 +7,22 @@ import net.minecraft.enchantment.provider.EnchantmentProvider;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.ai.NoPenaltyTargeting;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.RavagerEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.projectile.WindChargeEntity;
 import net.minecraft.entity.raid.RaiderEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -49,11 +55,26 @@ public class WindcallerEntity extends RaiderEntity implements GeoEntity
     static final Predicate<Difficulty> DIFFICULTY_ALLOWS_DOOR_BREAKING_PREDICATE = (difficulty) -> {
         return difficulty == Difficulty.NORMAL || difficulty == Difficulty.HARD;
     };
+
+    private static final TrackedData<Integer> ATTACK_STATE =
+            DataTracker.registerData(WindcallerEntity.class, TrackedDataHandlerRegistry.INTEGER);
+
     boolean polnareff;
     private AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
+    int blastCooldown = 0;
+    int liftCooldown = 0;
+    private int attackAnimTimer = 0;
+    private int lastAttackState = 0;
+
     public WindcallerEntity(EntityType<? extends RaiderEntity> entityType, World world) {
         super(entityType, world);
+    }
+
+    @Override
+    protected void initDataTracker(DataTracker.Builder builder) {
+        super.initDataTracker(builder);
+        builder.add(ATTACK_STATE, 0);
     }
 
     public static DefaultAttributeContainer.Builder setAttributes()
@@ -63,7 +84,21 @@ public class WindcallerEntity extends RaiderEntity implements GeoEntity
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 12.0f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.5f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 1.0f)
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 12.0);
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 16.0);
+    }
+
+    @Override
+    public void tick()
+    {
+        super.tick();
+        if (blastCooldown > 0) blastCooldown--;
+        if (liftCooldown > 0) liftCooldown--;
+        if (attackAnimTimer > 0) {
+            attackAnimTimer--;
+            if (attackAnimTimer == 0) {
+                this.dataTracker.set(ATTACK_STATE, 0);
+            }
+        }
     }
 
     public void writeCustomDataToNbt(NbtCompound nbt)
@@ -122,10 +157,11 @@ public class WindcallerEntity extends RaiderEntity implements GeoEntity
     {
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(1, new WindcallerEntity.BreakDoorGoal(this));
-        this.goalSelector.add(4, new WindcallerEntity.AttackGoal(this));
-        this.goalSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
-        this.goalSelector.add(3, new ActiveTargetGoal<>(this, MerchantEntity.class, true));
-        this.goalSelector.add(3, new ActiveTargetGoal<>(this, IronGolemEntity.class, true));
+        this.goalSelector.add(4, new WindcallerEntity.WindBlastGoal(this));
+        this.goalSelector.add(5, new WindcallerEntity.WindLiftGoal(this));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+        this.targetSelector.add(3, new ActiveTargetGoal<>(this, MerchantEntity.class, true));
+        this.targetSelector.add(3, new ActiveTargetGoal<>(this, IronGolemEntity.class, true));
         this.goalSelector.add(8, new WanderAroundGoal(this, 0.6));
         this.goalSelector.add(9, new LookAtEntityGoal(this, PlayerEntity.class, 3.0F, 1.0F));
         this.goalSelector.add(10, new LookAtEntityGoal(this, MobEntity.class, 8.0F));
@@ -135,20 +171,138 @@ public class WindcallerEntity extends RaiderEntity implements GeoEntity
         this.goalSelector.add(5, new CelebrateGoal(this));
     }
 
-    class AttackGoal extends MeleeAttackGoal {
-        public AttackGoal(WindcallerEntity windcallerEntity) {
-            super(windcallerEntity, 1.0, false);
+    // --- Wind Blast Goal (ranged, fires wind charge) ---
+
+    class WindBlastGoal extends Goal {
+        // Adjust this to the tick in the animation where the hand releases the blast
+        private static final int BLAST_HIT_TICK = 15;
+
+        private final WindcallerEntity windcaller;
+        private int timer = 0;
+        private boolean fired = false;
+
+        WindBlastGoal(WindcallerEntity entity) {
+            this.windcaller = entity;
+            this.setControls(EnumSet.of(Control.LOOK));
         }
 
-        protected double getSquaredMaxAttackDistance(LivingEntity target) {
-            if (this.mob.getVehicle() instanceof RavagerEntity) {
-                float f = this.mob.getVehicle().getWidth() - 0.1F;
-                return (f * 2.0F * f * 2.0F + target.getWidth());
-            } else {
-                return 4.0D + target.getWidth();
+        @Override
+        public boolean canStart() {
+            LivingEntity target = windcaller.getTarget();
+            return target != null
+                && windcaller.blastCooldown <= 0
+                && windcaller.squaredDistanceTo(target) <= 16.0 * 16.0;
+        }
+
+        @Override
+        public boolean shouldContinue() {
+            return !fired && windcaller.getTarget() != null;
+        }
+
+        @Override
+        public void start() {
+            timer = 0;
+            fired = false;
+            // Trigger animation immediately so it starts at frame 0
+            windcaller.dataTracker.set(ATTACK_STATE, 1);
+            windcaller.attackAnimTimer = 5;
+            windcaller.playSound(FracturiaSounds.WINDCALLER_BLAST);
+        }
+
+        @Override
+        public void stop() {
+            timer = 0;
+            fired = false;
+        }
+
+        @Override
+        public void tick() {
+            LivingEntity target = windcaller.getTarget();
+            if (target != null) {
+                windcaller.getLookControl().lookAt(target, 30.0F, 30.0F);
+            }
+            timer++;
+            if (timer >= BLAST_HIT_TICK && !fired && target != null) {
+                fired = true;
+                if (windcaller.getWorld() instanceof ServerWorld serverWorld) {
+                    Vec3d eyePos = windcaller.getEyePos();
+                    Vec3d direction = target.getEyePos().subtract(eyePos).normalize();
+
+                    WindChargeEntity windCharge = new WindChargeEntity(EntityType.WIND_CHARGE, serverWorld);
+                    windCharge.setOwner(windcaller);
+                    windCharge.refreshPositionAfterTeleport(eyePos.x, eyePos.y, eyePos.z);
+                    windCharge.setVelocity(direction.x, direction.y, direction.z, 1.5f, 0.0f);
+                    serverWorld.spawnEntity(windCharge);
+                    windcaller.playSound(FracturiaSounds.WINDCALLER_BLAST_ATTACK);
+                }
+                windcaller.blastCooldown = 60;
             }
         }
     }
+
+    // --- Wind Lift Goal (applies levitation, player falls and takes fall damage) ---
+
+    class WindLiftGoal extends Goal {
+        // Adjust this to the tick in the animation where the lift effect triggers
+        private static final int LIFT_HIT_TICK = 15;
+
+        private final WindcallerEntity windcaller;
+        private int timer = 0;
+        private boolean cast = false;
+
+        WindLiftGoal(WindcallerEntity entity) {
+            this.windcaller = entity;
+            this.setControls(EnumSet.of(Control.LOOK));
+        }
+
+        @Override
+        public boolean canStart() {
+            LivingEntity target = windcaller.getTarget();
+            return target != null
+                && windcaller.liftCooldown <= 0
+                && windcaller.squaredDistanceTo(target) <= 10.0 * 10.0;
+        }
+
+        @Override
+        public boolean shouldContinue() {
+            return !cast && windcaller.getTarget() != null;
+        }
+
+        @Override
+        public void start() {
+            timer = 0;
+            cast = false;
+            // Trigger animation immediately so it starts at frame 0
+            windcaller.dataTracker.set(ATTACK_STATE, 2);
+            windcaller.attackAnimTimer = 5;
+            windcaller.playSound(FracturiaSounds.WINDCALLER_LIFT);
+        }
+
+        @Override
+        public void stop() {
+            timer = 0;
+            cast = false;
+        }
+
+        @Override
+        public void tick() {
+            LivingEntity target = windcaller.getTarget();
+            if (target != null) {
+                windcaller.getLookControl().lookAt(target, 30.0F, 30.0F);
+            }
+            timer++;
+            if (timer >= LIFT_HIT_TICK && !cast && target != null
+                    && windcaller.squaredDistanceTo(target) <= 10.0 * 10.0) {
+                cast = true;
+                // Levitation for 3 seconds (60 ticks), amplifier 1 for faster rise
+                target.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 60, 2, false, true));
+                windcaller.playSound(FracturiaSounds.WINDCALLER_TORNADO);
+                windcaller.liftCooldown = 120;
+            }
+        }
+    }
+
+    // --- Supporting goals (unchanged) ---
 
     static class AttackHomeGoal extends Goal
     {
@@ -341,12 +495,16 @@ public class WindcallerEntity extends RaiderEntity implements GeoEntity
         }
     }
 
+    // --- Sounds ---
 
     @Override
     public SoundEvent getCelebratingSound()
     {
         return SoundEvents.ENTITY_EVOKER_CELEBRATE;
     }
+
+    @Override
+    protected float getSoundVolume() { return 0.6F; } // portée ~10 blocs
 
     @Override
     protected SoundEvent getAmbientSound()
@@ -372,10 +530,32 @@ public class WindcallerEntity extends RaiderEntity implements GeoEntity
         return FracturiaSounds.WINDCALLER_DEATH;
     }
 
+    // --- Animations ---
+
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers)
     {
         controllers.add(new AnimationController<>(this, "controller", 0, this::predicate));
+        controllers.add(new AnimationController<>(this, "attackController", 0, this::attackPredicate));
+    }
+
+    private PlayState attackPredicate(AnimationState<WindcallerEntity> state)
+    {
+        AnimationController<WindcallerEntity> controller = state.getController();
+        int attackState = this.dataTracker.get(ATTACK_STATE);
+
+        if (attackState != lastAttackState) {
+            lastAttackState = attackState;
+            if (attackState == 1) {
+                controller.forceAnimationReset();
+                controller.setAnimation(RawAnimation.begin().then("windcaller_blast", Animation.LoopType.PLAY_ONCE));
+            } else if (attackState == 2) {
+                controller.forceAnimationReset();
+                controller.setAnimation(RawAnimation.begin().then("windcaller_lift", Animation.LoopType.PLAY_ONCE));
+            }
+        }
+
+        return PlayState.CONTINUE;
     }
 
     private PlayState predicate(AnimationState<WindcallerEntity> windcallerEntityAnimationState)

@@ -19,6 +19,7 @@
   "entity.fracturia.mountaineer": "Mountaineer",
   "entity.fracturia.windcaller": "Windcaller",
   "entity.fracturia.squall_golem": "Squall Golem",
+  "entity.fracturia.illusioner": "Illusioner",
 
   "sounds.fracturia.mountaineer_ambient": "Mountaineer Hmmphf",
   "sounds.fracturia.mountaineer_hurt": "Mountaineer Hurt",
@@ -26,6 +27,10 @@
   "sounds.fracturia.windcaller_ambient": "Windcaller Hmmphf",
   "sounds.fracturia.windcaller_hurt": "Windcaller Hurt",
   "sounds.fracturia.windcaller_death": "Windcaller Death",
+  "sounds.fracturia.windcaller_blast": "Windcaller Blast",
+  "sounds.fracturia.windcaller_blast_attack": "Wind Blast Attack",
+  "sounds.fracturia.windcaller_lift": "Windcaller Lift",
+  "sounds.fracturia.wincaller_tornado": "Wind Lift Attack",
   "sounds.fracturia.squall_golem_ambient": "Squall Golem Windy",
   "sounds.fracturia.squall_golem_hurt": "Squall Golem Hurt",
   "sounds.fracturia.squall_golem_death": "Squall Golem Death",
@@ -34,8 +39,16 @@
   "sounds.fracturia.squall_golem_left_step": "Squall Golem Step",
   "sounds.fracturia.squall_golem_right_step": "Squall Golem Step",
   "sounds.fracturia.squall_golem_right_step": "Squall Golem Step",
+  "sounds.fracturia.illusioner_ambient": "Illusioner Hmmphf",
+  "sounds.fracturia.illusioner_hurt": "Illusioner Hurt",
+  "sounds.fracturia.illusioner_death": "Illusioner Death",
 
   "itemgroup.fracturia.fracturia_vanilla_items": "Fracturia: Vanilla Items",
   "itemgroup.fracturia.fracturia_vanilla_blocks": "Fracturia: Vanilla Blocks",
-  "itemgroup.fracturia.fracturia_vanilla_mobs": "Fracturia: Vanilla Mobs"
+  "itemgroup.fracturia.fracturia_vanilla_mobs": "Fracturia: Vanilla Mobs",
+
+  "fracturia.difficulty.button": "Fracturia: %s",
+  "fracturia_difficulty.none": "§aNormal",
+  "fracturia_difficulty.insane": "§cInsane",
+  "fracturia_difficulty.inconceivable": "§4Inconceivable"
 }

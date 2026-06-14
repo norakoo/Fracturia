@@ -17,6 +17,10 @@ public class FracturiaSounds
     public static final SoundEvent WINDCALLER_AMBIENT = registerSoundEvent("windcaller_ambient");
     public static final SoundEvent WINDCALLER_HURT = registerSoundEvent("windcaller_hurt");
     public static final SoundEvent WINDCALLER_DEATH = registerSoundEvent("windcaller_death");
+    public static final SoundEvent WINDCALLER_BLAST = registerSoundEvent("windcaller_blast");
+    public static final SoundEvent WINDCALLER_BLAST_ATTACK = registerSoundEvent("windcaller_blast_attack");
+    public static final SoundEvent WINDCALLER_LIFT = registerSoundEvent("windcaller_lift");
+    public static final SoundEvent WINDCALLER_TORNADO = registerSoundEvent("windcaller_tornado");
     public static final SoundEvent WINDCALLER_POLNAREFF = registerSoundEvent("wincaller_polnareff");
 
     public static final SoundEvent SQUALL_GOLEM_AMBIENT = registerSoundEvent("squall_golem_ambient");
@@ -30,7 +34,17 @@ public class FracturiaSounds
     public static final SoundEvent ILLUSIONER_AMBIENT = registerSoundEvent("illusioner_ambient");
     public static final SoundEvent ILLUSIONER_HURT = registerSoundEvent("illusioner_hurt");
     public static final SoundEvent ILLUSIONER_DEATH = registerSoundEvent("illusioner_death");
-    public static final SoundEvent ILLUSIONER_CAST_SPELL = registerSoundEvent("illusioner_cast_spell");
+    public static final SoundEvent ILLUSIONER_CLONE_DEATH = registerSoundEvent("illusioner_clone_death");
+    public static final SoundEvent ILLUSIONER_ALL_DEATH = registerSoundEvent("illusioner_all_death");
+    public static final SoundEvent ILLUSIONER_PREPARE_MIRROR = registerSoundEvent("illusioner_prepare_mirror");
+    public static final SoundEvent ILLUSIONER_MIRROR = registerSoundEvent("illusioner_mirror");
+    public static final SoundEvent ILLUSIONER_BLINDNESS = registerSoundEvent("illusioner_blindness");
+
+    public static final SoundEvent WHISPERER_AMBIENT = registerSoundEvent("whisperer_ambient");
+    public static final SoundEvent WHISPERER_HURT = registerSoundEvent("whisperer_hurt");
+    public static final SoundEvent WHISPERER_DEATH = registerSoundEvent("whisperer_death");
+    public static final SoundEvent WHISPERER_ATTACK = registerSoundEvent("whisperer_attack");
+    public static final SoundEvent WHISPERER_SUMMON = registerSoundEvent("whisperer_summon");
 
     // NETHER
 

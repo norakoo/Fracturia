@@ -3,6 +3,7 @@ package com.norako.fracturia.mixin;
 import com.norako.fracturia.entity.FracturiaEntities;
 import com.norako.fracturia.entity.custom.overworld.illagers.IllusionerEntity;
 import com.norako.fracturia.entity.custom.overworld.illagers.MountaineerEntity;
+import com.norako.fracturia.entity.custom.overworld.illagers.WindcallerEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.raid.RaiderEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -76,6 +77,19 @@ public class RaidMixin
                 {
                     illusioner.refreshPositionAndAngles(pos, 0.0F, 0.0F);
                     raid.addRaider(wave, illusioner, pos, false);
+                }
+            }
+        }
+        if (wave >= 3)
+        {
+            int windcallerCount = wave >= 5 ? 2 : 1;
+            for (int i = 0; i < windcallerCount; i++)
+            {
+                WindcallerEntity windcaller = FracturiaEntities.WINDCALLER_ENTITY.create(this.world);
+                if (windcaller != null)
+                {
+                    windcaller.refreshPositionAndAngles(pos, 0.0F, 0.0F);
+                    raid.addRaider(wave, windcaller, pos, false);
                 }
             }
         }
