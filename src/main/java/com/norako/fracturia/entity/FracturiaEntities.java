@@ -8,6 +8,7 @@ import com.norako.fracturia.entity.custom.overworld.illagers.SquallGolemEntity;
 import com.norako.fracturia.entity.custom.overworld.whisperer.PoisonVineEntity;
 import com.norako.fracturia.entity.custom.overworld.whisperer.WhispererEntity;
 import com.norako.fracturia.entity.custom.overworld.illagers.WindcallerEntity;
+import com.norako.fracturia.entity.custom.end.endersent.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -16,6 +17,8 @@ import net.minecraft.util.Identifier;
 
 public class FracturiaEntities
 {
+    // OVERWORLD
+
     public static final EntityType<MountaineerEntity> MOUNTAINEER_ENTITY = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(Fracturia.MOD_ID, "mountaineer"),
             EntityType.Builder.create(MountaineerEntity::new, SpawnGroup.MONSTER)
@@ -45,6 +48,43 @@ public class FracturiaEntities
             Identifier.of(Fracturia.MOD_ID, "poison_vine"),
             EntityType.Builder.<PoisonVineEntity>create(PoisonVineEntity::new, SpawnGroup.MONSTER)
                     .dimensions(0.7f, 4.0f).build());
+
+    // END
+
+    public static final EntityType<CommonEndersentEntity> ENDERSENT = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Fracturia.MOD_ID, "endersent"),
+            EntityType.Builder.create(CommonEndersentEntity::new, SpawnGroup.MONSTER)
+                    .dimensions(1.5f, 6.0f).build());
+
+    public static final EntityType<BindingEndersentEntity> BINDING_ENDERSENT = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Fracturia.MOD_ID, "binding_endersent"),
+            EntityType.Builder.create(BindingEndersentEntity::new, SpawnGroup.MONSTER)
+                    .dimensions(1.5f, 6.0f).build());
+
+    public static final EntityType<BlightEndersentEntity> BLIGHT_ENDERSENT = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Fracturia.MOD_ID, "blight_endersent"),
+            EntityType.Builder.create(BlightEndersentEntity::new, SpawnGroup.MONSTER)
+                    .dimensions(1.5f, 6.0f).build());
+
+    public static final EntityType<RavenousEndersentEntity> RAVENOUS_ENDERSENT = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Fracturia.MOD_ID, "ravenous_endersent"),
+            EntityType.Builder.create(RavenousEndersentEntity::new, SpawnGroup.MONSTER)
+                    .dimensions(1.5f, 6.0f).build());
+
+    public static final EntityType<ReapingEndersentEntity> REAPING_ENDERSENT = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Fracturia.MOD_ID, "reaping_endersent"),
+            EntityType.Builder.create(ReapingEndersentEntity::new, SpawnGroup.MONSTER)
+                    .dimensions(1.5f, 6.0f).build());
+
+    public static final EntityType<SavageEndersentEntity> SAVAGE_ENDERSENT = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Fracturia.MOD_ID, "savage_endersent"),
+            EntityType.Builder.create(SavageEndersentEntity::new, SpawnGroup.MONSTER)
+                    .dimensions(1.5f, 6.0f).build());
+
+    public static final EntityType<SpikedEndersentEntity> SPIKED_ENDERSENT = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Fracturia.MOD_ID, "spiked_endersent"),
+            EntityType.Builder.create(SpikedEndersentEntity::new, SpawnGroup.MONSTER)
+                    .dimensions(1.5f, 6.0f).build());
 
     public static void registerFracturiaEntities()
     {

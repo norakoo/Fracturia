@@ -1,0 +1,11 @@
+{
+  "description": { "translate": "enchantment.fracturia.void_tempering" },
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "primary_items": "#minecraft:enchantable/chest_armor",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": { "base": 25, "per_level_above_first": 15 },
+  "max_cost": { "base": 65, "per_level_above_first": 15 },
+  "anvil_cost": 6,
+  "slots": ["chest"]
+}

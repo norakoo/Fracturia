@@ -3,6 +3,10 @@
     "fracturia:deepslate_magmitite_ore",
     "fracturia:deepslate_xyophite_ore",
     "fracturia:deepslate_belite_ore",
-    "fracturia:deepslate_avidite_ore"
+    "fracturia:deepslate_avidite_ore",
+    "fracturia:enderlite",
+    "fracturia:enderlite_bricks",
+    "fracturia:cracked_enderlite_bricks",
+    "fracturia:chiseled_enderlite_bricks"
   ]
 }

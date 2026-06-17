@@ -2,15 +2,17 @@
 	"required": true,
 	"package": "com.norako.fracturia.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"RaidMixin",
-		"RaidAccessor",
-		"MobEntityMixin",
-		"PlayerEntityDamageMixin",
-		"OreFeatureMixin"
-	],
+    "mixins": [
+      "RaidMixin",
+      "RaidAccessor",
+      "MobEntityMixin",
+      "PlayerEntityDamageMixin",
+      "OreFeatureMixin",
+      "MinecraftServerMixin",
+      "PortalRoomMixin"
+    ],
 	"client": [
-		"CreateWorldScreenMixin"
+      "CreateWorldScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

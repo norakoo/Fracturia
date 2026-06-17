@@ -2,244 +2,359 @@
   "mountaineer_ambient": {
     "subtitle": "sounds.fracturia.mountaineer_ambient",
     "sounds": [
-      "fracturia:mountaineer_idle01",
-      "fracturia:mountaineer_idle02",
-      "fracturia:mountaineer_idle03",
-      "fracturia:mountaineer_idle04"
+      "fracturia:entity/illagers/mountaineer_idle01",
+      "fracturia:entity/illagers/mountaineer_idle02",
+      "fracturia:entity/illagers/mountaineer_idle03",
+      "fracturia:entity/illagers/mountaineer_idle04"
     ]
   },
   "mountaineer_hurt": {
     "subtitle": "sounds.fracturia.mountaineer_hurt",
     "sounds": [
-      "fracturia:mountaineer_hurt01",
-      "fracturia:mountaineer_hurt02",
-      "fracturia:mountaineer_hurt03",
-      "fracturia:mountaineer_hurt04",
-      "fracturia:mountaineer_hurt05"
+      "fracturia:entity/illagers/mountaineer_hurt01",
+      "fracturia:entity/illagers/mountaineer_hurt02",
+      "fracturia:entity/illagers/mountaineer_hurt03",
+      "fracturia:entity/illagers/mountaineer_hurt04",
+      "fracturia:entity/illagers/mountaineer_hurt05"
     ]
   },
   "mountaineer_death": {
     "subtitle": "sounds.fracturia.mountaineer_death",
     "sounds": [
-      "fracturia:mountaineer_death01",
-      "fracturia:mountaineer_death02",
-      "fracturia:mountaineer_death03",
-      "fracturia:mountaineer_death04"
+      "fracturia:entity/illagers/mountaineer_death01",
+      "fracturia:entity/illagers/mountaineer_death02",
+      "fracturia:entity/illagers/mountaineer_death03",
+      "fracturia:entity/illagers/mountaineer_death04"
     ]
   },
   "windcaller_ambient": {
     "subtitle": "sounds.fracturia.windcaller_ambient",
     "sounds": [
-      "fracturia:windcaller_idle01",
-      "fracturia:windcaller_idle02",
-      "fracturia:windcaller_idle03",
-      "fracturia:windcaller_idle04"
+      "fracturia:entity/illagers/windcaller_idle01",
+      "fracturia:entity/illagers/windcaller_idle02",
+      "fracturia:entity/illagers/windcaller_idle03",
+      "fracturia:entity/illagers/windcaller_idle04"
     ]
   },
   "windcaller_hurt": {
     "subtitle": "sounds.fracturia.windcaller_hurt",
     "sounds": [
-      "fracturia:windcaller_hurt01",
-      "fracturia:windcaller_hurt02",
-      "fracturia:windcaller_hurt03",
-      "fracturia:windcaller_hurt04"
+      "fracturia:entity/illagers/windcaller_hurt01",
+      "fracturia:entity/illagers/windcaller_hurt02",
+      "fracturia:entity/illagers/windcaller_hurt03",
+      "fracturia:entity/illagers/windcaller_hurt04"
     ]
   },
   "windcaller_death": {
     "subtitle": "sounds.fracturia.windcaller_death",
     "sounds": [
-      "fracturia:windcaller_death01",
-      "fracturia:windcaller_death02",
-      "fracturia:windcaller_death03",
-      "fracturia:windcaller_death04"
+      "fracturia:entity/illagers/windcaller_death01",
+      "fracturia:entity/illagers/windcaller_death02",
+      "fracturia:entity/illagers/windcaller_death03",
+      "fracturia:entity/illagers/windcaller_death04"
     ]
   },
   "windcaller_blast": {
     "subtitle": "sounds.fracturia.windcaller_blast",
     "sounds": [
-      "fracturia:windcaller_blast01",
-      "fracturia:windcaller_blast02",
-      "fracturia:windcaller_blast03"
+      "fracturia:entity/illagers/windcaller_blast01",
+      "fracturia:entity/illagers/windcaller_blast02",
+      "fracturia:entity/illagers/windcaller_blast03"
     ]
   },
   "windcaller_blast_attack": {
     "subtitle": "sounds.fracturia.windcaller_blast_attack",
     "sounds": [
-      "fracturia:windcaller_blast_attack01",
-      "fracturia:windcaller_blast_attack02",
-      "fracturia:windcaller_blast_attack03"
+      "fracturia:entity/illagers/windcaller_blast_attack01",
+      "fracturia:entity/illagers/windcaller_blast_attack02",
+      "fracturia:entity/illagers/windcaller_blast_attack03"
     ]
   },
   "windcaller_lift": {
     "subtitle": "sounds.fracturia.windcaller_lift",
     "sounds": [
-      "fracturia:windcaller_lift01",
-      "fracturia:windcaller_lift02",
-      "fracturia:windcaller_lift03"
+      "fracturia:entity/illagers/windcaller_lift01",
+      "fracturia:entity/illagers/windcaller_lift02",
+      "fracturia:entity/illagers/windcaller_lift03"
     ]
   },
   "windcaller_tornado": {
     "subtitle": "sounds.fracturia.windcaller_tornado",
     "sounds": [
-      "fracturia:windcaller_tornado01",
-      "fracturia:windcaller_tornado02",
-      "fracturia:windcaller_tornado03"
+      "fracturia:entity/illagers/windcaller_tornado01",
+      "fracturia:entity/illagers/windcaller_tornado02",
+      "fracturia:entity/illagers/windcaller_tornado03"
     ]
   },
   "windcaller_polnareff": {
     "subtitle": "sounds.fracturia.windcaller_polnareff",
     "sounds": [
-      "fracturia:windcaller_polnareff"
+      "fracturia:entity/illagers/windcaller_polnareff"
     ]
   },
   "squall_golem_ambient": {
     "subtitle": "sounds.fracturia.squall_golem_ambient",
     "sounds": [
-      "fracturia:squall_golem_idle01",
-      "fracturia:squall_golem_idle02"
+      "fracturia:entity/illagers/squall_golem_idle01",
+      "fracturia:entity/illagers/squall_golem_idle02"
     ]
   },
   "squall_golem_hurt": {
     "subtitle": "sounds.fracturia.squall_golem_hurt",
     "sounds": [
-      "fracturia:squall_golem_hurt01",
-      "fracturia:squall_golem_hurt02",
-      "fracturia:squall_golem_hurt03",
-      "fracturia:squall_golem_hurt04"
+      "fracturia:entity/illagers/squall_golem_hurt01",
+      "fracturia:entity/illagers/squall_golem_hurt02",
+      "fracturia:entity/illagers/squall_golem_hurt03",
+      "fracturia:entity/illagers/squall_golem_hurt04"
     ]
   },
   "squall_golem_death": {
     "subtitle": "sounds.fracturia.squall_golem_death",
     "sounds": [
-      "fracturia:squall_golem_death01",
-      "fracturia:squall_golem_death02",
-      "fracturia:squall_golem_death03"
+      "fracturia:entity/illagers/squall_golem_death01",
+      "fracturia:entity/illagers/squall_golem_death02",
+      "fracturia:entity/illagers/squall_golem_death03"
     ]
   },
   "squall_golem_power_on": {
     "subtitle": "sounds.fracturia.squall_golem_power_on",
     "sounds": [
-      "fracturia:squall_golem_power_on01",
-      "fracturia:squall_golem_power_on02"
+      "fracturia:entity/illagers/squall_golem_power_on01",
+      "fracturia:entity/illagers/squall_golem_power_on02"
     ]
   },
   "squall_golem_attack": {
     "subtitle": "sounds.fracturia.squall_golem_attack",
     "sounds": [
-      "fracturia:squall_golem_attack01",
-      "fracturia:squall_golem_attack02",
-      "fracturia:squall_golem_attack03",
-      "fracturia:squall_golem_attack04"
+      "fracturia:entity/illagers/squall_golem_attack01",
+      "fracturia:entity/illagers/squall_golem_attack02",
+      "fracturia:entity/illagers/squall_golem_attack03",
+      "fracturia:entity/illagers/squall_golem_attack04"
     ]
   },
   "squall_golem_left_step": {
     "subtitle": "sounds.fracturia.squall_golem_left_step",
     "sounds": [
-      "fracturia:squall_golem_left_step01",
-      "fracturia:squall_golem_left_step02",
-      "fracturia:squall_golem_left_step03"
+      "fracturia:entity/illagers/squall_golem_left_step01",
+      "fracturia:entity/illagers/squall_golem_left_step02",
+      "fracturia:entity/illagers/squall_golem_left_step03"
     ]
   },
   "squall_golem_right_step": {
     "subtitle": "sounds.fracturia.squall_golem_right_step",
     "sounds": [
-      "fracturia:squall_golem_right_step01",
-      "fracturia:squall_golem_right_step02",
-      "fracturia:squall_golem_right_step03"
+      "fracturia:entity/illagers/squall_golem_right_step01",
+      "fracturia:entity/illagers/squall_golem_right_step02",
+      "fracturia:entity/illagers/squall_golem_right_step03"
     ]
   },
   "illusioner_ambient": {
     "subtitle": "sounds.fracturia.illusioner_ambient",
     "sounds": [
-      "fracturia:illusioner_idle01",
-      "fracturia:illusioner_idle02",
-      "fracturia:illusioner_idle03",
-      "fracturia:illusioner_idle04"
+      "fracturia:entity/illagers/illusioner_idle01",
+      "fracturia:entity/illagers/illusioner_idle02",
+      "fracturia:entity/illagers/illusioner_idle03",
+      "fracturia:entity/illagers/illusioner_idle04"
     ]
   },
   "illusioner_hurt": {
     "subtitle": "sounds.fracturia.illusioner_hurt",
     "sounds": [
-      "fracturia:illusioner_hurt01",
-      "fracturia:illusioner_hurt02",
-      "fracturia:illusioner_hurt03"
+      "fracturia:entity/illagers/illusioner_hurt01",
+      "fracturia:entity/illagers/illusioner_hurt02",
+      "fracturia:entity/illagers/illusioner_hurt03"
     ]
   },
   "illusioner_death": {
     "subtitle": "sounds.fracturia.illusioner_death",
     "sounds": [
-      "fracturia:illusioner_death01",
-      "fracturia:illusioner_death02"
+      "fracturia:entity/illagers/illusioner_death01",
+      "fracturia:entity/illagers/illusioner_death02"
     ]
   },
   "illusioner_clone_death": {
     "subtitle": "sounds.fracturia.illusioner_clone_death",
     "sounds": [
-      "fracturia:illusioner_death_clone01",
-      "fracturia:illusioner_death_clone02"
+      "fracturia:entity/illagers/illusioner_death_clone01",
+      "fracturia:entity/illagers/illusioner_death_clone02"
     ]
   },
   "illusioner_all_death": {
     "subtitle": "sounds.fracturia.illusioner_all_death",
     "sounds": [
-      "fracturia:illusioner_death_all01",
-      "fracturia:illusioner_death_all02"
+      "fracturia:entity/illagers/illusioner_death_all01",
+      "fracturia:entity/illagers/illusioner_death_all02"
     ]
   },
   "illusioner_prepare_mirror": {
     "subtitle": "sounds.fracturia.illusioner_prepare_mirror",
     "sounds": [
-      "fracturia:illusioner_mirror_image"
+      "fracturia:entity/illagers/illusioner_mirror_image"
     ]
   },
   "illusioner_mirror": {
     "subtitle": "sounds.fracturia.illusioner_mirror",
     "sounds": [
-      "fracturia:illusioner_mirror01",
-      "fracturia:illusioner_mirror02"
+      "fracturia:entity/illagers/illusioner_mirror01",
+      "fracturia:entity/illagers/illusioner_mirror02"
     ]
   },
   "illusioner_blindness": {
     "subtitle": "sounds.fracturia.illusioner_blindness",
     "sounds": [
-      "fracturia:illusioner_blindness"
+      "fracturia:entity/illagers/illusioner_blindness"
     ]
   },
   "whisperer_ambient": {
     "subtitle": "sounds.fracturia.whisperer_ambient",
     "sounds": [
-      "fracturia:whisperer_idle01",
-      "fracturia:whisperer_idle02",
-      "fracturia:whisperer_idle03"
+      "fracturia:entity/whisperer/whisperer_idle01",
+      "fracturia:entity/whisperer/whisperer_idle02",
+      "fracturia:entity/whisperer/whisperer_idle03"
     ]
   },
   "whisperer_hurt": {
     "subtitle": "sounds.fracturia.whisperer_hurt",
     "sounds": [
-      "fracturia:whisperer_hurt01",
-      "fracturia:whisperer_hurt02",
-      "fracturia:whisperer_hurt03"
+      "fracturia:entity/whisperer/whisperer_hurt01",
+      "fracturia:entity/whisperer/whisperer_hurt02",
+      "fracturia:entity/whisperer/whisperer_hurt03"
     ]
   },
   "whisperer_death": {
     "subtitle": "sounds.fracturia.whisperer_death",
     "sounds": [
-      "fracturia:whisperer_death01",
-      "fracturia:whisperer_death02"
+      "fracturia:entity/whisperer/whisperer_death01",
+      "fracturia:entity/whisperer/whisperer_death02",
+      "fracturia:entity/whisperer/whisperer_death03"
     ]
   },
   "whisperer_attack": {
     "subtitle": "sounds.fracturia.whisperer_attack",
     "sounds": [
-      "fracturia:whisperer_attack01",
-      "fracturia:whisperer_attack02",
-      "fracturia:whisperer_attack03"
+      "fracturia:entity/whisperer/whisperer_attack01",
+      "fracturia:entity/whisperer/whisperer_attack02",
+      "fracturia:entity/whisperer/whisperer_attack03"
     ]
   },
   "whisperer_summon": {
     "subtitle": "sounds.fracturia.whisperer_summon",
     "sounds": [
-      "fracturia:whisperer_summon"
+      "fracturia:entity/whisperer/whisperer_summon"
+    ]
+  },
+  "endersent_ambient": {
+    "subtitle": "sounds.fracturia.endersent_ambient",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_idle01",
+      "fracturia:entity/endersent/endersent_idle02",
+      "fracturia:entity/endersent/endersent_idle03",
+      "fracturia:entity/endersent/endersent_idle04"
+    ]
+  },
+  "endersent_ambient_smash": {
+    "subtitle": "sounds.fracturia.endersent_ambient_smash",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_idle_smash01",
+      "fracturia:entity/endersent/endersent_idle_smash02",
+      "fracturia:entity/endersent/endersent_idle_smash03",
+      "fracturia:entity/endersent/endersent_idle_smash04"
+    ]
+  },
+  "endersent_step": {
+    "subtitle": "sounds.fracturia.endersent_step",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_step01",
+      "fracturia:entity/endersent/endersent_step02",
+      "fracturia:entity/endersent/endersent_step03",
+      "fracturia:entity/endersent/endersent_step04",
+      "fracturia:entity/endersent/endersent_step05",
+      "fracturia:entity/endersent/endersent_step06"
+    ]
+  },
+  "endersent_death": {
+    "subtitle": "sounds.fracturia.endersent_death",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_death01",
+      "fracturia:entity/endersent/endersent_death02",
+      "fracturia:entity/endersent/endersent_death03"
+    ]
+  },
+  "endersent_hurt": {
+    "subtitle": "sounds.fracturia.endersent_hurt",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_hurt01",
+      "fracturia:entity/endersent/endersent_hurt02",
+      "fracturia:entity/endersent/endersent_hurt03",
+      "fracturia:entity/endersent/endersent_hurt04",
+      "fracturia:entity/endersent/endersent_hurt05",
+      "fracturia:entity/endersent/endersent_hurt06",
+      "fracturia:entity/endersent/endersent_hurt07",
+      "fracturia:entity/endersent/endersent_hurt08"
+    ]
+  },
+  "endersent_deadly_escape": {
+    "subtitle": "sounds.fracturia.endersent_deadly_escape",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_deadlyescape01",
+      "fracturia:entity/endersent/endersent_deadlyescape02",
+      "fracturia:entity/endersent/endersent_deadlyescape03",
+      "fracturia:entity/endersent/endersent_deadlyescape04"
+    ]
+  },
+  "endersent_attack": {
+    "subtitle": "sounds.fracturia.endersent_attack",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_attack01",
+      "fracturia:entity/endersent/endersent_attack02",
+      "fracturia:entity/endersent/endersent_attack03",
+      "fracturia:entity/endersent/endersent_attack04"
+    ]
+  },
+  "endersent_swing": {
+    "subtitle": "sounds.fracturia.endersent_swing",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_swing01",
+      "fracturia:entity/endersent/endersent_swing02",
+      "fracturia:entity/endersent/endersent_swing03",
+      "fracturia:entity/endersent/endersent_swing04"
+    ]
+  },
+  "endersent_teleport_smash": {
+    "subtitle": "sounds.fracturia.endersent_teleport_smash",
+    "sounds": [
+      "fracturia:entity/endersent/endersent_teleportsmash01",
+      "fracturia:entity/endersent/endersent_teleportsmash02",
+      "fracturia:entity/endersent/endersent_teleportsmash03",
+      "fracturia:entity/endersent/endersent_teleportsmash04"
+    ]
+  },
+  "void_block_enter": {
+    "subtitle": "sounds.fracturia.void_block_enter",
+    "sounds": [
+      "fracturia:block/end/void_block_enter01",
+      "fracturia:block/end/void_block_enter02",
+      "fracturia:block/end/void_block_enter03",
+      "fracturia:block/end/void_block_enter04",
+      "fracturia:block/end/void_block_enter05"
+    ]
+  },
+  "void_effect_loop": {
+    "subtitle": "sounds.fracturia.void_effect_loop",
+    "sounds": [
+      "fracturia:block/end/void_block_loop01",
+      "fracturia:block/end/void_block_loop02",
+      "fracturia:block/end/void_block_loop03",
+      "fracturia:block/end/void_block_loop04"
+    ]
+  },
+  "void_effect_stop": {
+    "subtitle": "sounds.fracturia.void_effect_stop",
+    "sounds": [
+      "fracturia:block/end/void_block_exit01",
+      "fracturia:block/end/void_block_exit02",
+      "fracturia:block/end/void_block_exit03",
+      "fracturia:block/end/void_block_exit04"
     ]
   }
 }

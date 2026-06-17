@@ -29,6 +29,15 @@ public class FracturiaItems
 
     // END
 
+    public static final Item ENDERLITE_CRYSTAL = registerItem("enderlite_crystal", new Item(new Item.Settings()));
+    public static final Item ENDERLITE_INGOT = registerItem("enderlite_ingot", new Item(new Item.Settings()));
+    public static final Item BINDING_EYE = registerItem("binding_eye", new EndersentEyeItem("item.fracturia.binding_eye.tooltip"));
+    public static final Item BLIGHT_EYE = registerItem("blight_eye", new EndersentEyeItem("item.fracturia.blight_eye.tooltip"));
+    public static final Item RAVENOUS_EYE = registerItem("ravenous_eye", new EndersentEyeItem("item.fracturia.ravenous_eye.tooltip"));
+    public static final Item REAPING_EYE = registerItem("reaping_eye", new EndersentEyeItem("item.fracturia.reaping_eye.tooltip"));
+    public static final Item SAVAGE_EYE = registerItem("savage_eye", new EndersentEyeItem("item.fracturia.savage_eye.tooltip"));
+    public static final Item SPIKED_EYE = registerItem("spiked_eye", new EndersentEyeItem("item.fracturia.spiked_eye.tooltip"));
+
     // ARKONIA
 
     // BIRUNIA

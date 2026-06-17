@@ -28,7 +28,7 @@ public abstract class CreateWorldScreenMixin extends Screen {
             fracturia_selected = fracturia_selected.next();
             FracturiaDifficultyManager.setPending(fracturia_selected);
             btn.setMessage(fracturia_buildLabel(fracturia_selected));
-        }).dimensions(this.width / 2 - 102, this.height - 52, 204, 20).build());
+        }).dimensions(this.width / 2 - 102, this.height / 4 + 116, 204, 20).build());
     }
 
     @Unique

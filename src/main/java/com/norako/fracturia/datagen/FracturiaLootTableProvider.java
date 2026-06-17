@@ -22,5 +22,9 @@ public class FracturiaLootTableProvider extends FabricBlockLootTableProvider
         addDrop(FracturiaBlocks.DEEPSLATE_XYOPHITE_ORE, oreDrops(FracturiaBlocks.DEEPSLATE_XYOPHITE_ORE, FracturiaItems.RAW_XYOPHITE));
         addDrop(FracturiaBlocks.DEEPSLATE_BELITE_ORE, oreDrops(FracturiaBlocks.DEEPSLATE_BELITE_ORE, FracturiaItems.BELITE_INGOT));
         addDrop(FracturiaBlocks.DEEPSLATE_AVIDITE_ORE, oreDrops(FracturiaBlocks.DEEPSLATE_AVIDITE_ORE, FracturiaItems.AVIDITE_INGOT));
+        addDrop(FracturiaBlocks.ENDERLITE, oreDrops(FracturiaBlocks.ENDERLITE, FracturiaItems.ENDERLITE_CRYSTAL));
+        addDrop(FracturiaBlocks.ENDERLITE_BRICKS, drops(FracturiaBlocks.ENDERLITE_BRICKS));
+        addDrop(FracturiaBlocks.CRACKED_ENDERLITE_BRICKS, drops(FracturiaBlocks.CRACKED_ENDERLITE_BRICKS));
+        addDrop(FracturiaBlocks.CHISELED_ENDERLITE_BRICKS, drops(FracturiaBlocks.CHISELED_ENDERLITE_BRICKS));
     }
 }

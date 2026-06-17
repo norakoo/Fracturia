@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "fracturia:block/chiseled_enderlite_bricks"
+  }
+}

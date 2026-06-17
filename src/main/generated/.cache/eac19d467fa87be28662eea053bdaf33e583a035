@@ -1,5 +1,9 @@
-// 1.21	2026-04-07T14:27:51.8874131	Fracturia/Block Loot Tables
-0a95cd037fae01892f4449d768bc2aa9bbbdf2c3 data\fracturia\loot_table\blocks\deepslate_xyophite_ore.json
+// 1.21	2026-06-16T03:41:49.6138078	Fracturia/Block Loot Tables
 dffcf334ac1bfab80e1ddba3c57ede2f2c765db0 data\fracturia\loot_table\blocks\deepslate_avidite_ore.json
+0a95cd037fae01892f4449d768bc2aa9bbbdf2c3 data\fracturia\loot_table\blocks\deepslate_xyophite_ore.json
 20b8c46facc8390248692a126caba85ee857a004 data\fracturia\loot_table\blocks\deepslate_belite_ore.json
 85fc5b721b5b703c7b37b41b651ff5a9a930c571 data\fracturia\loot_table\blocks\deepslate_magmitite_ore.json
+eb88172627c923b9734e593ae9d7295d45689846 data\fracturia\loot_table\blocks\chiseled_enderlite_bricks.json
+731fab2c6142ca2b5ee0accff728755b65ae47c3 data\fracturia\loot_table\blocks\cracked_enderlite_bricks.json
+9ca258e5fe9407c629019fa8ee5585f0415b7030 data\fracturia\loot_table\blocks\enderlite.json
+1c7f97b8174cac32db8453a349e8961199845332 data\fracturia\loot_table\blocks\enderlite_bricks.json

@@ -1,6 +1,7 @@
 package com.norako.fracturia.block;
 
 import com.norako.fracturia.Fracturia;
+import com.norako.fracturia.sound.FracturiaSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -40,6 +41,31 @@ public class FracturiaBlocks
 
     // END
 
+    public static final Block ENDERLITE = registerBlock("enderlite",
+            new Block(AbstractBlock.Settings.copy(Blocks.PURPUR_BLOCK)));
+
+    public static final Block ENDERLITE_BRICKS = registerBlock("enderlite_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.PURPUR_BLOCK)));
+
+    public static final Block CRACKED_ENDERLITE_BRICKS = registerBlock("cracked_enderlite_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.PURPUR_BLOCK)));
+
+    public static final Block CHISELED_ENDERLITE_BRICKS = registerBlock("chiseled_enderlite_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.PURPUR_BLOCK)));
+
+    public static final Block VOID_BLOCK = registerBlock("void_block",
+            new VoidBlock(AbstractBlock.Settings.create()
+                    .noCollision()
+                    .replaceable()
+                    .strength(0.2f)
+                    .luminance(state -> 3)
+                    .sounds(new BlockSoundGroup(1.0f, 1.0f,
+                            FracturiaSounds.VOID_EFFECT_STOP,
+                            FracturiaSounds.VOID_BLOCK_ENTER,
+                            FracturiaSounds.VOID_BLOCK_ENTER,
+                            FracturiaSounds.VOID_EFFECT_STOP,
+                            FracturiaSounds.VOID_BLOCK_ENTER))));
+
     // ARKONIA
 
     // BIRUNIA
@@ -75,9 +101,5 @@ public class FracturiaBlocks
     public static void registerFracturiaBlocks()
     {
         Fracturia.LOGGER.info("Registering Fracturia Blocks for " + Fracturia.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(FracturiaBlocks.DEEPSLATE_MAGMITITE_ORE);
-        });
     }
 }

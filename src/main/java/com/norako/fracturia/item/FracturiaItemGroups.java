@@ -23,6 +23,12 @@ public class FracturiaItemGroups
                         entries.add(FracturiaItems.XYOPHITE_INGOT);
                         entries.add(FracturiaItems.BELITE_INGOT);
                         entries.add(FracturiaItems.AVIDITE_INGOT);
+                        entries.add(FracturiaItems.BINDING_EYE);
+                        entries.add(FracturiaItems.BLIGHT_EYE);
+                        entries.add(FracturiaItems.RAVENOUS_EYE);
+                        entries.add(FracturiaItems.REAPING_EYE);
+                        entries.add(FracturiaItems.SAVAGE_EYE);
+                        entries.add(FracturiaItems.SPIKED_EYE);
                     }).build());
 
     public static final ItemGroup FRACTURIA_VANILLA_BLOCKS = Registry.register(Registries.ITEM_GROUP,
@@ -35,6 +41,10 @@ public class FracturiaItemGroups
                         entries.add(FracturiaBlocks.DEEPSLATE_BELITE_ORE);
                         entries.add(FracturiaBlocks.DEEPSLATE_AVIDITE_ORE);
                         entries.add(FracturiaBlocks.NETHER_ONYX_ORE);
+                        entries.add(FracturiaBlocks.ENDERLITE);
+                        entries.add(FracturiaBlocks.ENDERLITE_BRICKS);
+                        entries.add(FracturiaBlocks.CRACKED_ENDERLITE_BRICKS);
+                        entries.add(FracturiaBlocks.CHISELED_ENDERLITE_BRICKS);
                     }).build());
 
     public static final ItemGroup FRACTURIA_VANILLA_MOBS = Registry.register(Registries.ITEM_GROUP,

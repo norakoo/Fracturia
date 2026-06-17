@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "id": "fracturia:void_block" },
+    "title": { "translate": "fracturia.advancement.avoidable.title" },
+    "description": { "translate": "fracturia.advancement.avoidable.desc" },
+    "frame": "challenge",
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "parent": "minecraft:end/root",
+  "criteria": {
+    "survived_voided": {
+      "trigger": "fracturia:survived_voided"
+    }
+  }
+}

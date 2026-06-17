@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye"
+    },
+    "title": {
+      "translate": "fracturia.advancement.catch_them_all.title"
+    },
+    "description": {
+      "translate": "fracturia.advancement.catch_them_all.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/follow_ender_eye",
+  "criteria": {
+    "entered_portal_room": {
+      "trigger": "fracturia:entered_portal_room"
+    }
+  }
+}

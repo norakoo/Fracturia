@@ -22,12 +22,22 @@ public class FracturiaBlockTagProvider extends FabricTagProvider.BlockTagProvide
                 .add(FracturiaBlocks.DEEPSLATE_MAGMITITE_ORE)
                 .add(FracturiaBlocks.DEEPSLATE_XYOPHITE_ORE)
                 .add(FracturiaBlocks.DEEPSLATE_BELITE_ORE)
-                .add(FracturiaBlocks.DEEPSLATE_AVIDITE_ORE);
+                .add(FracturiaBlocks.DEEPSLATE_AVIDITE_ORE)
+                .add(FracturiaBlocks.ENDERLITE)
+                .add(FracturiaBlocks.ENDERLITE_BRICKS)
+                .add(FracturiaBlocks.CRACKED_ENDERLITE_BRICKS)
+                .add(FracturiaBlocks.CHISELED_ENDERLITE_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(FracturiaBlocks.DEEPSLATE_MAGMITITE_ORE)
                 .add(FracturiaBlocks.DEEPSLATE_XYOPHITE_ORE)
                 .add(FracturiaBlocks.DEEPSLATE_BELITE_ORE)
                 .add(FracturiaBlocks.DEEPSLATE_AVIDITE_ORE);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(FracturiaBlocks.ENDERLITE)
+                .add(FracturiaBlocks.ENDERLITE_BRICKS)
+                .add(FracturiaBlocks.CRACKED_ENDERLITE_BRICKS)
+                .add(FracturiaBlocks.CHISELED_ENDERLITE_BRICKS);
     }
 }

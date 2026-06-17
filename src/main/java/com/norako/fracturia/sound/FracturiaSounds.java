@@ -50,6 +50,20 @@ public class FracturiaSounds
 
     // END
 
+    public static final SoundEvent VOID_BLOCK_ENTER = registerSoundEvent("void_block_enter");
+    public static final SoundEvent VOID_EFFECT_LOOP = registerSoundEvent("void_effect_loop");
+    public static final SoundEvent VOID_EFFECT_STOP = registerSoundEvent("void_effect_stop");
+
+    public static final SoundEvent ENDERSENT_AMBIENT = registerSoundEvent("endersent_ambient");
+    public static final SoundEvent ENDERSENT_AMBIENT_SMASH = registerSoundEvent("endersent_ambient_smash");
+    public static final SoundEvent ENDERSENT_STEP = registerSoundEvent("endersent_step");
+    public static final SoundEvent ENDERSENT_HURT = registerSoundEvent("endersent_hurt");
+    public static final SoundEvent ENDERSENT_DEATH = registerSoundEvent("endersent_death");
+    public static final SoundEvent ENDERSENT_ATTACK = registerSoundEvent("endersent_attack");
+    public static final SoundEvent ENDERSENT_SWING = registerSoundEvent("endersent_swing");
+    public static final SoundEvent ENDERSENT_TELEPORT_SMASH = registerSoundEvent("endersent_teleport_smash");
+    public static final SoundEvent ENDERSENT_DEADLY_ESCAPE = registerSoundEvent("endersent_deadly_escape");
+
     // ARKONIA
 
     // BIRUNIA

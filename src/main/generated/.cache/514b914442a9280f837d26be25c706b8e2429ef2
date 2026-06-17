@@ -1,3 +1,4 @@
-// 1.21	2026-04-07T14:27:51.8874131	Fracturia/Tags for minecraft:block
+// 1.21	2026-06-16T03:41:49.6138078	Fracturia/Tags for minecraft:block
 51798f8e7b1197c68cc1d423b012e86a67efa01f data\minecraft\tags\block\needs_iron_tool.json
-51798f8e7b1197c68cc1d423b012e86a67efa01f data\minecraft\tags\block\mineable\pickaxe.json
+657965b541a69a6e2d26cf204cf1cc47396efc07 data\minecraft\tags\block\mineable\pickaxe.json
+bed1290cc5056700f4427bcfdca54abe46795d58 data\minecraft\tags\block\needs_diamond_tool.json

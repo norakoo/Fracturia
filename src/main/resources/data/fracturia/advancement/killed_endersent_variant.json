@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye"
+    },
+    "title": {
+      "translate": "fracturia.advancement.ender_guard.title"
+    },
+    "description": {
+      "translate": "fracturia.advancement.ender_guard.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "fracturia:entered_portal_room",
+  "criteria": {
+    "killed_endersent_variant": {
+      "trigger": "fracturia:killed_endersent_variant"
+    }
+  }
+}
